@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export REPOPATH=/home/legalgroup/repositories/*
+    - export REPOPATH=/home/legalgroup/repositories/lawyer-website/*
     - export SITEPATH=/home/legalgroup/public_html/
     - /bin/rsync -rav --exclude '.git' --exclude '.cpanel.yml' --del $REPOPATH $SITEPATH
