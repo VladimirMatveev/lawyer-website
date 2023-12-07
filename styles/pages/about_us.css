@@ -1,0 +1,103 @@
+.about-us__hero {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  background: url(../../images/handshake.jpg) no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
+.tagline__about-us {
+  color: white;
+  width: 800px;
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  background-color: #1f3e5c;
+}
+
+.tagline-box__about-us h1{
+font-weight: 400;
+font-size: 28px;
+margin-bottom: 30px;
+}
+
+
+
+.about-us__text {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  padding: 60px 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+  /* width: 100%; */
+  border-top: 1px solid #e5e5e7;
+  color: #2d2e33;
+  font-size: 15px;
+}
+
+.about-us__title {
+  margin-top: 18%;
+}
+
+.about-us__text h3 {
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 400;
+  border-left: 2px solid #1e3684;
+  padding-left: 10px;
+}
+
+.about-us__title img {
+  width: 300px;
+  margin-top: 100px;
+}
+
+.about-us__hero .tagline-box {
+  padding: 49px 0px;
+  margin-left: 4px;
+}
+
+@media (max-width: 960px) {
+  
+  .tagline__about-us {
+    width: 600px;
+  }
+  
+  .tagline-box__about-us h1{
+  font-size: 24px;
+  }
+  
+  .about-us__text {
+    padding: 60px 40px;
+    grid-template-columns: 300px 1fr;
+  }
+}
+
+@media (max-width: 670px) {
+
+  .about-us__hero {
+  padding: 80px 0;
+  }
+
+  .tagline__about-us {
+    width: 100%;
+  }
+
+  .tagline-box__about-us h1{
+    font-size: 20px;
+  }
+
+.about-us__text {
+  padding: 40px 20px;
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+}
+
+.about-us__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+}

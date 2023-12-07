@@ -1,0 +1,176 @@
+.hero-s {
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    text-align: center;
+    background: url(../../images/registration.jpg) no-repeat;
+    background-size: 100%;
+    padding: 140px 0px;
+  }
+
+  .hero-s__bankruptcy {
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    text-align: center;
+    background: url(../../images/business_bankruptcy.jpg) no-repeat;
+    background-size: 100%;
+    padding: 140px 0px;
+  }
+
+  .hero-s__liquidation {
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    text-align: center;
+    background: url(../../images/business_liquidation.jpg) no-repeat;
+    background-size: 100%;
+    padding: 140px 0px;
+  }
+
+  .hero-s__legal_services {
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    text-align: center;
+    background: url(../../images/legal_services.jpg) no-repeat;
+    background-size: 100%;
+    padding: 140px 0px;
+  }
+
+  .hero-s__rent_and_sale {
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    text-align: center;
+    background: url(../../images/rent_and_sale.jpg) no-repeat;
+    background-size: 100%;
+    padding: 140px 0px;
+  }
+
+  
+  .hero-s__support_management {
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    text-align: center;
+    background: url(../../images/support_management.jpg) no-repeat;
+    background-size: 100%;
+    padding: 140px 0px;
+  }
+  
+  .tagline-box-s {
+    padding: 540px 90px;
+    margin-left: 20px;
+    text-align: center;
+  }
+  
+  .tagline-s {
+    color: white;
+    width: 670px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    background-color: #1f3e5c;
+    margin: 30px;
+    padding: 40px;
+  }
+  
+  .hero-s h1{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+
+  .tagline-box-s p{
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .tagline-box-s a{
+    margin-top: 40px;
+  }
+
+  .info {
+    padding: 80px;
+  }
+
+ .info p {
+  font-weight: 500;
+ }
+
+  .info img {
+     width: 25px;
+  }
+
+  .info__text {
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  .info__contact-btn {
+    margin-top: 40px;
+    display: inline-block;
+  }
+
+
+  @media (max-width: 960px) {
+  .tagline-s {
+    width: 70%;
+  }
+
+  }
+
+  @media (max-width: 670px) {
+    .tagline-s {
+      width: 80%;
+      height: 80%;
+    }
+
+    .tagline-box-s h1 {
+      font-size: 18px;
+    }
+
+    .tagline-box-s p {
+      font-size: 12px;
+    }
+
+    .tagline-box-s {
+        padding: 0;
+    }
+    .hero-s{
+      background-size: 200%;
+    }
+    .hero-s__bankruptcy{
+      background-size: 200%;
+    }
+
+    .hero-s__legal_services{
+      background-size: 200%;
+    }
+
+    .hero-s__liquidation{
+      background-size: 200%;
+    }
+
+    .hero-s__rent_and_sale{
+      background-size: 200%;
+    }
+
+    .hero-s__support_management{
+      background-size: 200%;
+    }
+
+    .info {
+      padding: 30px;
+  }
+
+    .info .info__text{
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .info p {
+      font-size: 14px;
+    }
+  }

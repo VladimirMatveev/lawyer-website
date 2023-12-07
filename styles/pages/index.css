@@ -1,0 +1,460 @@
+.hero {
+  text-align: center;
+  background: url(../../images/imgcon.jpg) no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  height: 710px;
+}
+
+.tagline {
+  color: white;
+  width: 750px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  background-color: #1f3e5c;
+}
+
+.tagline-content {
+  margin-left: 20px;
+}
+
+.tagline-content h1 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.tagline-content p {
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.tagline-content a {
+  margin-top: 40px;
+}
+
+/* -----------Services--------- */
+
+.services {
+  padding: 60px 0;
+}
+
+.services-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-auto-rows: 286px; */
+  gap: 20px;
+  text-align: center;
+}
+
+.services-item img {
+  width: 80px;
+}
+
+.services-item a {
+  padding: 40px;
+  display: inline-block;
+}
+
+.services-item h2 {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 400;
+  margin-top: 20px;
+  color: #28333e;
+  min-height: 56px;
+}
+
+.services-item p {
+  margin-top: 20px;
+}
+.services-item:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+/* -----------how we work----------- */
+
+.how-we-work {
+  padding: 40px;
+  text-align: center;
+}
+
+.how-we-work__list {
+  padding: 50px 0;
+}
+
+.how-we-work__wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.how-we-work__item {
+  line-height: 1.5;
+  width: 320px;
+  height: 230px;
+  padding: 20px;
+  margin-right: 30px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 15px;
+  border-radius: 20px;
+}
+
+.how-we-work__item:last-child {
+  margin-right: 0;
+}
+
+.how-we-work__list img {
+  width: 50px;
+  margin-top: 10px;
+}
+
+.how-we-work .numbers {
+  font-weight: 400;
+  font-size: 35px;
+  color: #ea861b;
+}
+
+/****************************************************/
+.about-us {
+  background: #f8f9fd;
+  background-image: url('../../images/home-bg.webp');
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: 30% 90%;
+  min-height: 645px;
+  padding: 40px 0;
+}
+
+.about_us__content {
+  max-width: 800px;
+  margin-left: 100px;
+}
+
+.about_us__text {
+  font-size: 17px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.about_us__text p:first-child {
+  margin-bottom: 30px;
+}
+
+/****************************************************/
+
+.form-consulting {
+  height: 525px;
+  overflow: hidden;
+  text-align: center;
+  background: url(../../images/consulting.jpg) no-repeat;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+.form__inner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 0;
+  height: 100%;
+}
+
+.form {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(31, 62, 92, 0.9);
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form__content {
+  margin: 100px 40px;
+}
+
+.form h1 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.form p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.74;
+  display: inline-block;
+}
+
+.form a,
+.form .phone {
+  margin-top: 40px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  color: white;
+  text-decoration: none;
+}
+
+.form .phone p {
+  margin: 0;
+}
+
+.price {
+  padding: 50px 40px;
+}
+
+.price h2 {
+  color: #ea861b !important;
+  font-size: 45px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.price ul {
+  margin: 50px;
+  list-style: none;
+}
+
+.price-item {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+}
+
+.price-item:nth-child(n + 2) {
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid #e5e5e7;
+}
+
+.price-text::before {
+  margin-right: 5px;
+  margin-bottom: -3px;
+  content: '';
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-image: url(../../images/icons/checkmark.svg);
+}
+
+.price-number {
+  text-align: right;
+  min-width: 110px;
+  max-width: 110px;
+}
+
+.price-description {
+  margin: 50px 20px 0 50px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media (max-width: 960px) {
+  .tagline {
+    width: 100%;
+    min-height: 468px;
+    height: 468px;
+    padding: 10px;
+  }
+
+  .tagline-content {
+    margin: 0;
+  }
+
+  .services {
+    padding: 70px 0;
+  }
+
+  .services-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-us {
+    padding: 70px 0;
+    min-height: 400px;
+    background-size: cover;
+    background-position: 44%;
+  }
+
+  .about_us__content {
+    margin-left: 0;
+    max-width: 620px;
+  }
+
+  
+  .about_us__content h2{
+    font-size: 20px;
+  }
+
+  .about_us__text {
+    font-size: 15px;
+  }
+
+  .how-we-work {
+    padding: 70px 0;
+  }
+
+  .form-consulting {
+    height: 468px;
+  }
+
+  .form {
+    width: 60%;
+  }
+
+  .form__content {
+    margin: 60px 20px;
+  }
+
+  .form h1 {
+    font-size: 26px;
+  }
+
+  .price {
+    padding: 40px 20px;
+  }
+
+  .price h2 {
+    font-size: 35px;
+  }
+  .price-description {
+    font-weight: 500;
+    margin: 40px 0 20px 0;
+  }
+
+  .price-item:nth-child(n + 2) {
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+  .price ul {
+    margin: 20px 0 0;
+    padding: 0;
+
+}
+
+}
+
+@media (max-width: 670px) {
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .tagline-content h1 {
+    font-size: 20px;
+  }
+
+  .services-list {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .services-item a {
+    padding: 20px;
+  }
+
+  .about-us {
+    background-position: 50% 50%;
+  }
+
+  .how-we-work {
+    padding-top: 70px;
+  }
+
+  .how-we-work__first-row {
+    flex-wrap: wrap;
+  }
+
+  .how-we-work__first-row .how-we-work__item{
+    width: 48%;
+  }
+  
+  .how-we-work__first-row .how-we-work__item:last-of-type{
+    margin-top: 30px;
+  }
+
+  .how-we-work__item {
+    margin-right: 0;
+  }
+
+  .how-we-work__item:first-of-type {
+    margin-right: 20px;
+  }
+
+  .form__inner {
+    padding: 0;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .form h1 {
+    margin-top: 40px;
+    font-size: 28px;
+  }
+
+  .price {
+    padding: 40px 20px;
+  }
+
+  .price h2 {
+    font-size: 25px;
+  }
+
+  .price-item {
+    font-size: 14px;
+  }
+
+  .price-description {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .price-number {
+    text-align: right;
+    min-width: 84px;
+    max-width: 84px;
+  }
+
+}
+
+@media (max-width: 550px) {
+  .how-we-work__wrapper {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .how-we-work__wrapper .how-we-work__item {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  .how-we-work__first-row .how-we-work__item:last-of-type {
+    margin-top: 10px;
+}
+
+}
+
+@media (max-width: 430px) {
+
+.form__content {
+  margin: 30px 10px;
+}
+
+.price-text::before {
+  margin-right: 2px;
+  height: 15px;
+  width: 15px;
+}
+
+}

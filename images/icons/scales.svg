@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="60" viewBox="0 0 80 60" class="el-image uk-text-primary uk-svg uk-scrollspy-inview " uk-scrollspy-class="uk-animation-stroke" style="--uk-animation-stroke: 81px;">
+    <path fill="none" stroke="#ea861b" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M21 18s6.67-4.5 18.5-4.5S57 18 57 18M39 12v43"></path>
+    <path fill="#ea861b" d="M53 56.5H26V55l12-4h2l13 4"></path>
+    <path fill="none" stroke="#ea861b" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M65.03 39.5c-.2 4.26-3.72 7.67-8.03 7.67s-7.83-3.41-8.02-7.67h16.05z"></path>
+    <path fill="none" stroke="#ea861b" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M63.98 39L57 18.5 49.97 39" stroke-linejoin="round"></path>
+    <path fill="none" stroke="#ea861b" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M29.03 39.5c-.2 4.26-3.72 7.67-8.03 7.67s-7.83-3.41-8.02-7.67h16.05z"></path>
+    <path fill="none" stroke="#ea861b" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M27.98 39L21 18.5 13.97 39" stroke-linejoin="round"></path>
+    <circle cx="39" cy="11.5" r="4.5" fill="#ea861b"></circle>
+    <circle cx="21" cy="18" r="2.5" fill="#ea861b"></circle>
+    <circle cx="57" cy="18" r="2.5" fill="#ea861b"></circle>
+    <circle cx="39" cy="6.5" r="2.5" fill="#ea861b"></circle>
+</svg>

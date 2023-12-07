@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="60" viewBox="0 0 80 60" class="el-image uk-text-primary uk-svg uk-scrollspy-inview " uk-scrollspy-class="uk-animation-stroke" style="--uk-animation-stroke: 157px;">
+    <path fill="#ea861b" d="M48.82 19.03c1.63 0 2.94 1.32 2.94 2.94 0 1.62-1.32 2.94-2.94 2.94-1.63 0-2.94-1.32-2.94-2.94 0-1.62 1.32-2.94 2.94-2.94z"></path>
+    <circle cx="31.18" cy="21.97" r="2.94" fill="#ea861b"></circle>
+    <circle cx="40" cy="30" r="25" fill="none" stroke="#ea861b" stroke-width="2" stroke-miterlimit="10"></circle>
+    <path fill="none" stroke="#ea861b" stroke-width="2" stroke-miterlimit="10" d="M53.53 35.91c-2.06 5.59-7.35 9.12-13.53 9.12s-11.47-3.53-13.53-9.12"></path>
+</svg>
