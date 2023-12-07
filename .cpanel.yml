@@ -1,7 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/example/public_html/
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp -R styles $DEPLOYPATH
-    - /bin/cp -R images $DEPLOYPATH
+    - export REPOPATH=/home/legalgroup/repo/*
+    - export SITEPATH=/home/legalgroup/public_html/
+    - /bin/rsync -rav --exclude '.git' --exclude '.cpanel.yml' --del $REPOPATH $SITEPATH
