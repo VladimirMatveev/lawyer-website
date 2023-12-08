@@ -100,7 +100,8 @@
  }
 
   .info img {
-     width: 25px;
+    width: 15px;
+    margin-right: 7px
   }
 
   .info__text {
