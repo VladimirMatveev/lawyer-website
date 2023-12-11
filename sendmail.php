@@ -22,15 +22,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers = "From: $name <$email>";
 
     // Отправка письма
-    $to = 'vlmatveev5@gmail.com'; // Укажите ваш email
+    $to = 'kolesnickov.marat@yandex.ru'; // Укажите ваш email
     $subject = 'Новое сообщение с вашего сайта';
 
     if (mail($to, $subject, $email_content, $headers)) {
         // Письмо успешно отправлено
-        header('Location: thank_you_page.html');
+        echo "Сообщение успешно отправлено.";
     } else {
         // Не удалось отправить письмо
-        header('Location: error_page.html');
+        echo "Ошибка при отправке сообщения.";
     }
 }
 ?>
