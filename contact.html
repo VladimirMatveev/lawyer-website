@@ -198,7 +198,7 @@
             </li>
           </ul>
         </div>
-        <div class="contact-form">
+        <!-- <div class="contact-form">
           <h2>Свяжитесь с нами</h2>
           <input type="text" placeholder="Ваше имя" />
           <input type="email" placeholder="Электронная почта" />
@@ -213,7 +213,21 @@
               
           <button class="btn-light btn">Отправить запрос</button>
           
-        </div>
+        </div> -->
+
+        <form action="sendmail.php" method="post" class="contact-form">
+          <h2>Свяжитесь с нами</h2>
+          <input type="text" name="name" placeholder="Ваше имя" required />
+          <input type="email" name="email" placeholder="Электронная почта" required />
+          <input type="tel" name="phone" placeholder="Номер телефона" />
+          <textarea name="message" id="message" cols="30" rows="3" placeholder="Задайте вопрос или опишите ситуацию" required></textarea>
+          <div class="checkbox-wrapper">
+              <input type="checkbox" id="agree" class="check" name="agree" checked required>
+              <label for="agree">Я согласен на обработку <a href="./files/privacy_policy_by.pdf" target="_blank">персональных данных</a></label>
+          </div>
+          <button type="submit" class="btn-light btn">Отправить запрос</button>
+      </form>
+
       </div>
     </div>
   </section>
