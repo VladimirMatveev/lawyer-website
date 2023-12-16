@@ -40,6 +40,8 @@
 
 .contact-form input::placeholder, .contact-form textarea::placeholder {
   opacity: 0.7;
+  color: #000000;
+  font-weight: 410;
 }
 
   .contact-form h2 {
