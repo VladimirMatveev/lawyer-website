@@ -27,9 +27,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (mail($to, $subject, $email_content, $headers)) {
         // Письмо успешно отправлено
+        http_response_code(200);
         echo "Сообщение успешно отправлено.";
     } else {
         // Не удалось отправить письмо
+        http_response_code(500); 
         echo "Ошибка при отправке сообщения.";
     }
 }

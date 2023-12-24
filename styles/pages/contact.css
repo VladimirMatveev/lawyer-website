@@ -6,6 +6,7 @@
   
   }
 
+
 .info-item h2{
   font-weight: 400;
   color: #28333e;
@@ -96,8 +97,14 @@ label {
   font-size: 10px; 
 }
 
- 
+.success {
+  background-color: #09bf39;
+  border-color: #09bf39;
+}
 
+.success:hover {
+ color: #28333e !important;
+}
 
 
 
