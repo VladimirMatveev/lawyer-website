@@ -20,3 +20,20 @@ function scrollToTop() {
 }
 
 button.addEventListener('click', scrollToTop)
+
+// 
+
+document.getElementById('submitFormButton').addEventListener('click', function() {
+  var xhr = new XMLHttpRequest();
+  var formData = new FormData(document.getElementById('contactForm'));
+
+  xhr.open('POST', '/sendmail.php', true);
+  xhr.onreadystatechange = function() {
+      if (xhr.readyState == 4 && xhr.status == 200) {
+          alert('Сообщение отправлено: ' + xhr.responseText);
+      } else if (xhr.readyState == 4) {
+          alert('Ошибка при отправке сообщения.');
+      }
+  };
+  xhr.send(formData);
+});
