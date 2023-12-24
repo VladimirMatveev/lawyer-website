@@ -90,7 +90,7 @@ function validateForm() {
   var isValid = true;
 
   // Сбросить предыдущие ошибки
-  [name, email].forEach(clearError);
+  [name, email, phone].forEach(clearError);
 
   // Проверка имени
   if (!name.value.trim()) {
@@ -114,15 +114,4 @@ function validateForm() {
   }
   return isValid;
 }
-
-// Обработчик события клика для кнопки отправки
-document.getElementById('submitFormButton').addEventListener('click', function(event) {
-  event.preventDefault(); // Предотвратите стандартное поведение формы
-
-  // Вызов функции валидации
-  if (validateForm()) {
-      // Если валидация прошла успешно, продолжаем отправку формы
-      // document.getElementById('contactForm').submit();
-  }
-});
 
