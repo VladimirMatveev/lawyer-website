@@ -24,16 +24,24 @@ button.addEventListener('click', scrollToTop)
 // 
 
 document.getElementById('submitFormButton').addEventListener('click', function() {
+  event.preventDefault(); // Переместили сюда
   var xhr = new XMLHttpRequest();
   var formData = new FormData(document.getElementById('contactForm'));
 
-  xhr.open('POST', '/sendmail.php', true);
+
+  xhr.open('POST', 'https://legalgroup.by/sendmail.php', true);
   xhr.onreadystatechange = function() {
       if (xhr.readyState == 4 && xhr.status == 200) {
-          alert('Сообщение отправлено: ' + xhr.responseText);
+          onFormSuccess()
       } else if (xhr.readyState == 4) {
           alert('Ошибка при отправке сообщения.');
       }
   };
   xhr.send(formData);
 });
+
+function onFormSuccess () {
+  const button = document.getElementById('submitFormButton')
+  button.classList.add('success')
+  button.innerText = 'Данные отправлены'
+}
