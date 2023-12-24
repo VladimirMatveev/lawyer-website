@@ -24,7 +24,7 @@ button.addEventListener('click', scrollToTop)
 // 
 
 document.getElementById('submitFormButton').addEventListener('click', function() {
-  event.preventDefault(); // Переместили сюда
+  // event.preventDefault(); // Переместили сюда
   var xhr = new XMLHttpRequest();
   var formData = new FormData(document.getElementById('contactForm'));
 
@@ -36,6 +36,7 @@ document.getElementById('submitFormButton').addEventListener('click', function()
           clearForm()
       } else if (xhr.readyState == 4) {
           alert('Ошибка при отправке сообщения.');
+          console.log(xhr)
       }
   };
   xhr.send(formData);
