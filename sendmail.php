@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers = "From: $name <$email>";
 
     // Отправка письма
-    $to = 'vlmatveev5@gmail.com'; // Укажите ваш email
+    $to = 'kolesnickov.marat@yandex.ru'; // Укажите ваш email
     $subject = 'Новое сообщение с вашего сайта';
 
     if (mail($to, $subject, $email_content, $headers)) {
