@@ -104,7 +104,7 @@ function validateForm() {
       isValid = false;
   }
 
-  if (!name.value.trim()) {
+  if (!phone.value.trim()) {
     setError(phone);
     isValid = false;
 }
