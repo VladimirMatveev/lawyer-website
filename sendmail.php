@@ -13,7 +13,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Проверка корректности email
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        // Ошибка валидации email
         echo "Некорректный адрес электронной почты";
         exit;
     }
@@ -23,15 +22,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // Настройки сервера
         $mail->isSMTP(); // Использовать SMTP
-        $mail->Host = 'smtp.legalgroup.by'; // Адрес SMTP сервера
+        $mail->Host = 'smtp.legalgroup.by'; // Проверьте и укажите правильный SMTP сервер
         $mail->SMTPAuth = true;
         $mail->Username = 'legalgroup'; // SMTP username
         $mail->Password = 'A$XGna3e)Qf3E)g3'; // SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 465;
+        $mail->Port = 587; // Используйте правильный порт для SMTP
 
         // Отправитель
-        $mail->setFrom('from@example.com', 'Mailer');
+        $mail->setFrom('your_email@legalgroup.by', 'Mailer'); // Укажите реальный адрес отправителя
 
         // Получатель
         $mail->addAddress('kolesnickov.marat@yandex.ru', 'Marat Kolesnikov');
@@ -48,7 +47,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-
 
 
 
