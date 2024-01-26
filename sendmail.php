@@ -23,12 +23,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // Настройки сервера
         $mail->isSMTP(); // Использовать SMTP
-        $mail->Host = 'ftp.legalgroup.by'; // Адрес SMTP сервера
+        $mail->Host = 'smtp.legalgroup.by'; // Адрес SMTP сервера
         $mail->SMTPAuth = true;
         $mail->Username = 'legalgroup'; // SMTP username
         $mail->Password = 'A$XGna3e)Qf3E)g3'; // SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 21;
+        $mail->Port = 465;
 
         // Отправитель
         $mail->setFrom('from@example.com', 'Mailer');
