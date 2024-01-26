@@ -20,9 +20,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_content .= "Сообщение:\n$message\n";
 
     // Заголовки письма
-    $headers = "From: $name <$email>\r\n";
-    $headers .= "Reply-To: $email\r\n";
+    // $headers = "From: $name <$email>\r\n";
+    // $headers .= "Reply-To: $email\r\n";
+    // $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
+
+    $headers = "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
+    $headers .= "Content-Transfer-Encoding: quoted-printable\r\n";
+    $headers .= "From: kolesnickov.marat@yandex.ru\r\n"; // Используйте действительный email-адрес
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "Return-Path: your_email@example.com\r\n"; // Используйте тот же email-адрес
 
     // Отправка письма
     $to = 'kolesnickov.marat@yandex.ru'; // Укажите ваш email
