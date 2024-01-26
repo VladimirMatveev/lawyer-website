@@ -18,9 +18,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $headers = "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
-    $headers .= "From: kolesnickov.marat@yandex.ru\r\n"; // Измените на реальный адрес вашего домена
+    $headers .= "From: noreply@legalgroup.by\r\n"; // Измените на реальный адрес вашего домена
     $headers .= "Reply-To: $email\r\n";
-    $headers .= "Return-Path: kolesnickov.marat@yandex.ru\r\n"; // Измените на реальный адрес вашего домена
+    $headers .= "Return-Path: noreply@legalgroup.by\r\n"; // Измените на реальный адрес вашего домена
 
     $to = 'kolesnickov.marat@yandex.ru';
     $subject = 'Новое сообщение с вашего сайта';
