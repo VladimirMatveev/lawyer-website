@@ -543,9 +543,11 @@ header .logo {
     display: block;
     margin-top: 20px;
   }
+  
   .menu__messenger-list .header__contacts-messenger {
     margin-left: 8px;
   }
+  
   .header__contacts {
     flex-direction: column;
     text-align: center;
