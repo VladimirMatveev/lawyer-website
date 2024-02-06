@@ -246,7 +246,6 @@
 
 .price-number {
   text-align: right;
-  /* min-width: 110px; */
   min-width: 110px;
   max-width: 110px;
 }
@@ -257,9 +256,6 @@
   font-size: 18px;
 }
 
-.price-number s {
-  /* color: red; */
-}
 .red-line {
   text-decoration: line-through;
   text-decoration-color: red;
@@ -468,5 +464,4 @@
   height: 1px;
   width: 15px;
 }
-
 }
