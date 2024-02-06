@@ -246,6 +246,7 @@
 
 .price-number {
   text-align: right;
+  /* min-width: 110px; */
   min-width: 110px;
   max-width: 110px;
 }
@@ -254,6 +255,17 @@
   margin: 50px 20px 0 50px;
   font-weight: 600;
   font-size: 18px;
+}
+
+.price-number s {
+  /* color: red; */
+}
+.red-line {
+  text-decoration: line-through;
+  text-decoration-color: red;
+  text-decoration-thickness: 2px; 
+  text-decoration-style: solid; 
+  margin-left: auto;
 }
 
 @media (max-width: 960px) {
@@ -453,7 +465,7 @@
 
 .price-text::before {
   margin-right: 2px;
-  height: 15px;
+  height: 1px;
   width: 15px;
 }
 
